@@ -1,0 +1,214 @@
+/*   
+    This CSS file is written according to the best of my ability which I hope to sharpen over the following weeks and months.  
+*/
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: black;
+  color: lightgray;
+  background-image: url("https://images.unsplash.com/photo-1513728731559-6bf2c0c931f9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+  background-size: cover;
+}
+
+body {
+  z-index: 500;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  text-align: center;
+  border-width: 2px;
+  max-width: 96vw;
+  border-style: none;
+  border-color: dimgrey;
+}
+
+ul {
+  padding: 0em 2em;
+  order: 10;
+}
+
+p {
+    text-align: left;
+    order: 10;
+
+}
+
+img {
+    order: 10;
+}
+
+/*  Animation below is heavily inspired by example from developer.mozilla.org 
+    just slightly modified by yours truly. */
+#navigation-frm {
+  animation-duration: 1s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-top: -100%;
+    width: 36vw;
+  }
+
+  to {
+    margin-top: 1em;
+    width: 36vw;
+  }
+}
+
+
+.toggleMenuBtn {
+    z-index: 750;
+    position: absolute;
+    top: 0.35em;
+    left: 0.35em;
+    width: 10em;
+    height: 3em;
+    background: transparent;
+    color: inherit;
+    font-weight: bolder;
+    border: 1px solid inherit;
+}
+
+.toggleMenuBtn:hover, .toggleErrMsgBtn:hover{
+  cursor: grab;
+  background-image: url("https://images.unsplash.com/photo-1513728731559-6bf2c0c931f9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+  color: white;
+}
+  
+.toggleErrMsgBtn {
+    z-index: 750;
+    position: absolute;
+    top: 3.5em;
+    left: 0.35em;
+    width: 10em;
+    height: 3em;
+    background: transparent;
+    color: inherit;
+    font-weight: bolder;
+    border: 1px solid inherit;
+}
+    
+.navContainer {
+  z-index: 760;
+  position: absolute;
+  display: none;
+  top: 4em;
+  left: 1em;
+  width: 36vw;
+  padding-bottom: 1em;
+  margin: 1em 1em;
+  background: black;
+  border-style: solid;
+  border-color: inherit;
+  opacity: 0.75;
+}
+
+.mainContainer {
+  z-index: 500;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: baseline;
+  order: 0;
+  width: 96vw;
+  border-style:none;
+  border-color: inherit;
+}
+
+.subContainer {
+  z-index: 500;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: inherit;
+  align-content: inherit;
+  order: 1;
+  max-width: 45vw;
+  margin: 1em 0em;
+  border-style: inherit;
+  border-color: inherit;
+}
+
+.miniContainer {
+  z-index: 500;
+  order: 8;
+  max-width: 32vw;
+  padding: 0em 1em 1em 1em;
+  margin: 1em 1em;
+  border-style: inherit;
+  border-color: inherit;
+}
+
+.messagesDiv {
+  z-index: 500;
+  order: -5;
+  width: 96vw;
+  padding-top: 1em;
+  background-size: cover;
+  border-style: none;
+}
+
+.liItem {
+  color: antiquewhite;
+  font-weight: lighter;
+  text-align: left;
+  padding: 0em 1em;
+}
+
+.liItem a {
+  color: inherit;
+  font-weight: inherit;   
+  text-align: inherit;
+}
+
+.errorMessages {
+  color: rgb(248, 0, 0);
+  font-weight: bold;
+  display: none;
+  }
+
+.generalMessages {
+  color: cadetblue;
+  font-weight: bold;
+  padding-bottom: 1em;
+  text-align: center;
+  order: 2;
+}
+
+.contentParagraphs {
+  color: antiquewhite;
+  font-weight:normal;
+  text-align: left; 
+  padding: 0em 1em;
+  display:flex;
+  justify-content:flex-start;
+  order: 5;
+}
+
+.responsiveImg {
+  width: 16vw;
+  height: auto;
+}
+
+.reducedOpacityImg {
+    opacity: 0.5;
+}
+
+.iFrameClass {
+    width: 35vw;
+    height: 40vw;
+    display: block;
+    resize: both;
+    order: 12;
+}
+
+.subText {
+    font-size: small;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    order: 14;
+    padding: 0em 0em 0em 2em;
+
+}
